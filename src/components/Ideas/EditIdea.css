@@ -1,0 +1,230 @@
+/********** New idea card **********/
+.edit-idea-card {
+    background   : rgb(51, 51, 51) !important;
+    border       : none;
+    border-radius: 10px;
+    color        : white;
+    position     : relative;
+}
+
+.edit-idea-card>.edit-idea-card-header {
+    padding                : 10px 15px;
+    background-color       : rgb(51, 51, 51) !important;
+    border-bottom          : 2px solid rgb(255, 215, 0);
+    border-top-left-radius : 10px;
+    border-top-right-radius: 10px;
+}
+
+.edit-idea-card>.edit-idea-card-header>div>h4 {
+    color        : rgb(255, 215, 0);
+    margin-bottom: 0;
+}
+
+.edit-idea-card>.edit-idea-card-header>div>h4>span {
+    color: rgb(255, 255, 255);
+}
+
+.edit-card-link-btn {
+    color: white;
+}
+
+.edit-card-link-btn:hover {
+    color: rgb(255, 215, 0);
+}
+
+.edit-card-link-btn:focus {
+    box-shadow: none;
+}
+
+.edit-idea-card>.edit-idea-card-body {
+    margin          : 5px;
+    background-color: rgb(90, 90, 90) !important;
+    border-radius   : 5px;
+    position        : relative;
+}
+
+.edit-card-form-group>label {
+    color: rgb(255, 215, 0);
+}
+
+.edit-card-form-group>input,
+.edit-card-form-group>textarea,
+.edit-card-form-group>select,
+.edit-card-form-group>div>select {
+    border: 1px solid rgb(31, 31, 31);
+}
+
+.edit-card-form-group>input:focus,
+.edit-card-form-group>textarea:focus,
+.edit-card-form-group>select:focus,
+.edit-card-form-group>div>select:focus {
+    border    : 1px solid rgb(255, 215, 0);
+    box-shadow: 0 0 0 0.2rem rgba(255, 215, 0, 0.25);
+}
+
+.edit-card-add-category-btn {
+    border     : none;
+    font-size  : 24px;
+    padding    : 0;
+    white-space: nowrap;
+    background : none;
+    margin-left: 3px;
+    color      : gold;
+}
+
+.edit-card-add-category-btn:hover {
+    color: white;
+}
+
+.edit-card-add-category-btn:focus {
+    outline: none;
+}
+/* button submit */
+.edit-card-btn-submit {
+    border-color: rgb(51, 51, 51);
+    background  : rgb(255, 215, 0);
+    color       : rgb(51, 51, 51);
+    margin-right: 5px;
+}
+
+.edit-card-btn-submit:hover {
+    background: rgb(185, 165, 0);
+}
+
+.edit-card-btn-submit:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 215, 0, 0.25);
+}
+/* button back */
+.edit-card-btn-back {
+    border-color: rgb(255, 215, 0);
+    background  : rgb(51, 51, 51);
+    color       : rgb(255, 215, 0);
+}
+
+.edit-card-btn-back:hover {
+    background: rgb(71, 71, 71);
+    color       : rgb(255, 215, 0);
+}
+
+.edit-card-btn-back:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 215, 0, 0.25);
+}
+
+/* New idea modal */
+.edit-idea-modal-content {
+    background-color: rgb(51, 51, 51) !important;
+}
+
+.edit-idea-modal-header {
+    background-color: rgb(51, 51, 51) !important;
+    border-bottom   : 2px solid rgb(255, 215, 0);
+}
+
+.edit-idea-modal-header>div>h5 {
+    color: rgb(255, 215, 0);
+}
+
+.edit-idea-modal-header>button {
+    color: rgb(255, 255, 255);
+}
+
+.edit-idea-modal-header>button:hover {
+    color: rgb(255, 215, 0);
+}
+
+.edit-idea-modal-body {
+    margin          : 5px;
+    background-color: rgb(90, 90, 90) !important;
+    border-radius   : 5px;
+    position        : relative;
+}
+
+.add-new-category-btn {
+    border-color: rgb(255, 215, 0);
+    background  : rgb(255, 215, 0);
+    color       : rgb(51, 51, 51);
+}
+
+.add-new-category-btn:hover {
+    background: rgb(185, 165, 0);
+    color     : rgb(51, 51, 51);
+}
+
+.add-new-category-btn:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 215, 0, 0.25);
+}
+
+.add-new-category-input:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 215, 0, 0.25);
+}
+
+.edit-idea-subtitle-modal {
+    color: rgb(255, 215, 0);
+}
+
+.edit-idea-category-modal>li {
+    border          : 1px solid rgb(31, 31, 31);
+    background-color: rgb(200, 200, 200);
+    padding         : 5px 15px;
+}
+
+.edit-idea-category-modal>li>div {
+    padding: 5px;
+}
+
+.edit-idea-delete-category {
+    color: rgb(31, 31, 31);
+}
+
+.edit-idea-delete-category:hover {
+    color: rgb(71, 71, 71);
+}
+
+.edit-idea-delete-category:focus {
+    box-shadow: none;
+}
+
+.edit-idea-modal-footer{
+    background-color: rgb(51, 51, 51) !important;
+    border-top   : 2px solid rgb(255, 215, 0);
+}
+
+/* Modal scrollbar */
+.edit-idea-category-modal.scrollbar {
+    float           : left;
+    height          : 100%;
+    width           : 100%;
+    background      : transparent;
+    overflow-y      : auto;
+    /* border-radius: 10px; */
+    max-height      : 350px;
+}
+
+.edit-idea-category-modal.scrollbar.scrollbar-primary::-webkit-scrollbar-track {
+    --webkit-box-shadow: inset 0 0 6px rgba(255, 215, 0, 0.1);
+    background-color   : rgba(244, 244, 244, 0.1);
+    border-radius      : 10px;
+}
+
+.edit-idea-category-modal.scrollbar.scrollbar-primary::-webkit-scrollbar {
+    width                     : 12px;
+    background-color          : rgba(244, 244, 244, 0.1);
+    border-top-right-radius   : 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.edit-idea-category-modal.scrollbar.scrollbar-primary::-webkit-scrollbar-thumb {
+    border-radius      : 10px;
+    --webkit-box-shadow: inset 0 0 6px rgba(255, 215, 0, 0.1);
+    background-image   : -webkit-gradient(linear, left top, right top, from(rgba(255, 215, 0, 1)), to(rgba(51, 51, 51, 1)nd));
+    background-image   : -webkit-linear-gradient(left, rgba(255, 215, 0, 1) 0%, rgba(51, 51, 51, 1)nd 100%);
+    background-image   : linear-gradient(to right, rgba(255, 215, 0, 1) 0%, rgba(51, 51, 51, 1) 100%);
+}
+
+.modal-backdrop {
+    position     : absolute;
+    opacity      : 0.8;
+    width        : 100%;
+    height       : 100%;
+    border-radius: 5px;
+}

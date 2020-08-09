@@ -1,0 +1,218 @@
+/********** List cards **********/
+.list-btn-sort {
+    color        : rgb(255, 215, 0);
+    background   : rgb(51, 51, 51) !important;
+    border       : 2px solid rgb(255, 215, 0);
+    margin-bottom: 10px;
+}
+
+.list-btn-sort:hover {
+    color        : rgb(255, 215, 0);
+    background   : rgb(71, 71, 71) !important;
+    border       : 2px solid rgb(255, 215, 0);
+    margin-bottom: 10px;
+}
+
+.list-btn-sort:focus {
+    box-shadow: none;
+}
+
+.list-card-content {
+    padding     : 5px;
+    background  : rgb(51, 51, 51) !important;
+    border      : 2px solid rgb(51, 51, 51);
+    border-right: none;
+}
+
+.list-card-content>.list-card {
+    padding         : 5px;
+    background-color: rgb(90, 90, 90) !important;
+    border          : 2px solid rgb(31, 31, 31);
+    cursor          : pointer;
+}
+
+.list-card-content>.list-card.list-active {
+    padding         : 5px;
+    background-color: rgb(110, 110, 110) !important;
+    border          : 2px solid rgb(255, 215, 0);
+    cursor          : pointer;
+    position        : relative;
+}
+
+.list-card-content>.list-card.list-active>.list-carret-arrow {
+    position : absolute;
+    top      : 0;
+    right    : -15px;
+    font-size: 20px;
+    padding  : 5px;
+    color    : rgb(255, 215, 0);
+    cursor   : pointer;
+}
+
+.list-card-content>.list-card.list-active:hover {
+    background-color: rgb(110, 110, 110) !important;
+    border          : 2px solid rgb(255, 215, 0);
+}
+
+.list-card-content>.list-card:hover {
+    background-color: rgb(110, 110, 110) !important;
+    border          : 2px solid rgb(71, 71, 71);
+}
+
+.list-card-body {
+    padding: 5px 10px;
+}
+
+.list-card-body>div>div>h3 {
+    color        : rgb(31, 31, 31);
+    margin-bottom: 0;
+}
+
+.list-card-body>div>div>h6 {
+    color        : rgb(255, 215, 0);
+    margin-bottom: 0;
+}
+
+.list-card-body>div>div>small {
+    color        : rgb(255, 255, 255);
+    margin-bottom: 0;
+}
+
+.list-card-content.scrollbar {
+    float        : left;
+    height       : auto;
+    width        : 100%;
+    background   : transparent;
+    overflow-y   : auto;
+    border-radius: 10px;
+    max-height   : 550px;
+}
+
+.list-card-content.scrollbar.scrollbar-primary::-webkit-scrollbar-track {
+    --webkit-box-shadow: inset 0 0 6px rgba(255, 215, 0, 0.1);
+    background-color   : rgba(244, 244, 244, 0.1);
+    border-radius      : 10px;
+}
+
+.list-card-content.scrollbar.scrollbar-primary::-webkit-scrollbar {
+    width                     : 12px;
+    background-color          : rgba(244, 244, 244, 0.1);
+    border-top-right-radius   : 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.list-card-content.scrollbar.scrollbar-primary::-webkit-scrollbar-thumb {
+    border-radius      : 10px;
+    --webkit-box-shadow: inset 0 0 6px rgba(255, 215, 0, 0.1);
+    background-image   : -webkit-gradient(linear, left top, right top, from(rgba(255, 215, 0, 1)), to(rgba(51, 51, 51, 1)nd));
+    background-image   : -webkit-linear-gradient(left, rgba(255, 215, 0, 1) 0%, rgba(51, 51, 51, 1)nd 100%);
+    background-image   : linear-gradient(to right, rgba(255, 215, 0, 1) 0%, rgba(51, 51, 51, 1) 100%);
+}
+
+.no-ideas {
+    padding      : 5px;
+    background   : rgb(51, 51, 51) !important;
+    border       : 2px solid rgb(31, 31, 31);
+    border-radius: 5px;
+    color        : rgb(255, 215, 0);
+}
+
+/********** Idea card **********/
+.idea-card {
+    background   : rgb(51, 51, 51) !important;
+    border       : none;
+    border-radius: 10px;
+    color        : white;
+    position     : relative;
+}
+
+.idea-card>.idea-card-header {
+    padding                : 10px 15px;
+    background-color       : rgb(51, 51, 51) !important;
+    border-bottom          : 2px solid rgb(255, 215, 0);
+    border-top-left-radius : 10px;
+    border-top-right-radius: 10px;
+}
+
+.idea-card>.idea-card-header>div>h4 {
+    color        : rgb(255, 215, 0);
+    margin-bottom: 0;
+}
+
+.idea-card>.idea-card-header>div>h4>span {
+    color: rgb(255, 255, 255);
+}
+
+.card-link-btn {
+    color: white;
+}
+
+.card-link-btn:hover {
+    color: rgb(255, 215, 0);
+}
+
+.card-link-btn:focus {
+    box-shadow: none;
+}
+
+.idea-card>.idea-card-body {
+    margin          : 5px;
+    background-color: rgb(90, 90, 90) !important;
+    border-radius   : 5px;
+    position        : relative;
+    padding         : 30px 50px
+}
+
+.idea-card>.idea-card-body>.idea-card-details>h5 {
+    color: rgb(255, 215, 0);
+}
+
+.idea-card>.idea-card-body>.idea-card-details>h5 {
+    margin-bottom: 0;
+}
+
+.idea-card>.idea-card-body>.idea-card-details>.idea-card-text {
+    font-size    : 18px;
+    text-indent  : 30px;
+    margin-bottom: 15px;
+}
+
+.idea-card>.idea-card-body>.idea-card-rating {
+    position        : absolute;
+    top             : 0;
+    right           : 0;
+    padding         : 2px 5px;
+    margin          : 5px;
+    font-size       : 20px;
+    font-weight     : bold;
+    border          : 1px solid rgb(51, 51, 51);
+    border-radius   : 5px;
+    color           : rgb(51, 51, 51);
+    background-color: rgb(255, 215, 0);
+    text-align      : center;
+}
+
+.idea-card>.idea-card-body>.idea-card-rating>div>span {
+    font-size  : 15px;
+    font-style : italic;
+    font-weight: 400;
+}
+
+.not-picked-idea {
+    text-align: center;
+    height    : 100%;
+    padding   : 20%;
+}
+
+.not-picked-idea>.list-light-bulb {
+    font-size: 100px;
+    color    : rgb(255, 215, 0);
+}
+
+.not-picked-idea>h3 {
+    color: white;
+}
+
+.not-picked-idea>h3>.list-carret-arrow {
+    color: rgb(255, 215, 0);
+}

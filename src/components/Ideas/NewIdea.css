@@ -1,0 +1,214 @@
+/********** New idea card **********/
+.new-idea-card {
+    background   : rgb(51, 51, 51) !important;
+    border       : none;
+    border-radius: 10px;
+    color        : white;
+    position     : relative;
+}
+
+.new-idea-card>.new-idea-card-header {
+    padding                : 10px 15px;
+    background-color       : rgb(51, 51, 51) !important;
+    border-bottom          : 2px solid rgb(255, 215, 0);
+    border-top-left-radius : 10px;
+    border-top-right-radius: 10px;
+}
+
+.new-idea-card>.new-idea-card-header>div>h4 {
+    color        : rgb(255, 215, 0);
+    margin-bottom: 0;
+}
+
+.new-idea-card>.new-idea-card-header>div>h4>span {
+    color: rgb(255, 255, 255);
+}
+
+.new-card-link-btn {
+    color: white;
+}
+
+.new-card-link-btn:hover {
+    color: rgb(255, 215, 0);
+}
+
+.new-card-link-btn:focus {
+    box-shadow: none;
+}
+
+.new-idea-card>.new-idea-card-body {
+    margin          : 5px;
+    background-color: rgb(90, 90, 90) !important;
+    border-radius   : 5px;
+    position        : relative;
+}
+
+.new-card-form-group>label {
+    color: rgb(255, 215, 0);
+}
+
+.new-card-form-group>input,
+.new-card-form-group>textarea,
+.new-card-form-group>select,
+.new-card-form-group>div>select {
+    border: 1px solid rgb(31, 31, 31);
+}
+
+.new-card-form-group>input:focus,
+.new-card-form-group>textarea:focus,
+.new-card-form-group>select:focus,
+.new-card-form-group>div>select:focus {
+    border    : 1px solid rgb(255, 215, 0);
+    box-shadow: 0 0 0 0.2rem rgba(255, 215, 0, 0.25);
+}
+
+.new-card-add-category-btn {
+    border     : none;
+    font-size  : 24px;
+    padding    : 0;
+    white-space: nowrap;
+    background : none;
+    margin-left: 3px;
+    color      : gold;
+}
+
+.new-card-add-category-btn:hover {
+    color: white;
+}
+
+.new-card-add-category-btn:focus {
+    outline: none;
+}
+
+.new-card-btn {
+    border-color: rgb(255, 215, 0);
+    background  : rgb(255, 215, 0);
+    color       : rgb(51, 51, 51);
+}
+
+.new-card-btn:hover {
+    background: rgb(185, 165, 0);
+}
+
+.new-card-btn:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 215, 0, 0.25);
+}
+
+/* New idea modal */
+.new-idea-modal-content {
+    background-color: rgb(51, 51, 51) !important;
+}
+
+.new-idea-modal-header {
+    background-color: rgb(51, 51, 51) !important;
+    border-bottom   : 2px solid rgb(255, 215, 0);
+}
+
+.new-idea-modal-header>div>h5 {
+    color: rgb(255, 215, 0);
+}
+
+.new-idea-modal-header>button {
+    color: rgb(255, 255, 255);
+}
+
+.new-idea-modal-header>button:hover {
+    color: rgb(255, 215, 0);
+}
+
+.new-idea-modal-body {
+    margin          : 5px;
+    background-color: rgb(90, 90, 90) !important;
+    border-radius   : 5px;
+    position        : relative;
+}
+
+.add-new-category-btn {
+    border-color: rgb(255, 215, 0);
+    background  : rgb(255, 215, 0);
+    color       : rgb(51, 51, 51);
+}
+
+.add-new-category-btn:hover {
+    background: rgb(185, 165, 0);
+    color     : rgb(51, 51, 51);
+}
+
+.add-new-category-btn:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 215, 0, 0.25);
+}
+
+.add-new-category-input:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 215, 0, 0.25);
+}
+
+.new-idea-subtitle-modal {
+    color: rgb(255, 215, 0);
+}
+
+.new-idea-category-modal>li {
+    border          : 1px solid rgb(31, 31, 31);
+    background-color: rgb(200, 200, 200);
+    padding         : 5px 15px;
+}
+
+.new-idea-category-modal>li>div {
+    padding: 5px;
+}
+
+.new-idea-delete-category {
+    color: rgb(31, 31, 31);
+}
+
+.new-idea-delete-category:hover {
+    color: rgb(71, 71, 71);
+}
+
+.new-idea-delete-category:focus {
+    box-shadow: none;
+}
+
+.new-idea-modal-footer{
+    background-color: rgb(51, 51, 51) !important;
+    border-top   : 2px solid rgb(255, 215, 0);
+}
+
+/* Modal scrollbar */
+.new-idea-category-modal.scrollbar {
+    float           : left;
+    height          : 100%;
+    width           : 100%;
+    background      : transparent;
+    overflow-y      : auto;
+    /* border-radius: 10px; */
+    max-height      : 350px;
+}
+
+.new-idea-category-modal.scrollbar.scrollbar-primary::-webkit-scrollbar-track {
+    --webkit-box-shadow: inset 0 0 6px rgba(255, 215, 0, 0.1);
+    background-color   : rgba(244, 244, 244, 0.1);
+    border-radius      : 10px;
+}
+
+.new-idea-category-modal.scrollbar.scrollbar-primary::-webkit-scrollbar {
+    width                     : 12px;
+    background-color          : rgba(244, 244, 244, 0.1);
+    border-top-right-radius   : 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.new-idea-category-modal.scrollbar.scrollbar-primary::-webkit-scrollbar-thumb {
+    border-radius      : 10px;
+    --webkit-box-shadow: inset 0 0 6px rgba(255, 215, 0, 0.1);
+    background-image   : -webkit-gradient(linear, left top, right top, from(rgba(255, 215, 0, 1)), to(rgba(51, 51, 51, 1)nd));
+    background-image   : -webkit-linear-gradient(left, rgba(255, 215, 0, 1) 0%, rgba(51, 51, 51, 1)nd 100%);
+    background-image   : linear-gradient(to right, rgba(255, 215, 0, 1) 0%, rgba(51, 51, 51, 1) 100%);
+}
+
+.modal-backdrop {
+    position     : absolute;
+    opacity      : 0.8;
+    width        : 100%;
+    height       : 100%;
+    border-radius: 5px;
+}
