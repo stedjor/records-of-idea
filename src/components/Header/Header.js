@@ -26,7 +26,7 @@ export class Header extends Component {
                     <NavLink activeClassName="active" className="header-link mr-4" to="/new-idea">
                         New Idea
                     </NavLink>
-                    <a className="header-link  idea-header-icon" target="_blank" href="https://github.com/stedjor/records-of-idea">
+                    <a className="header-link  idea-header-icon"  rel="noopener noreferrer"  target="_blank" href="https://github.com/stedjor/records-of-idea">
                     <FontAwesomeIcon icon={faGithub} />
                     </a>
                 </div>

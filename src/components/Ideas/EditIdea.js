@@ -31,6 +31,7 @@ class EditIdea extends Component {
         this.setState({
             ideaId: this.props.location.state.data
         })
+        this.getCategory()
         this.createRating()
     }
 
@@ -111,10 +112,14 @@ class EditIdea extends Component {
 
     //======= Manipulating category =======//
     getCategory = () => {
-        let cat = JSON.parse(localStorage.getItem('category'))
-        this.setState({
-            categories: cat
-        })
+        if (localStorage.getItem('category') !== null) {
+            let cat = JSON.parse(localStorage.getItem('category'))
+            this.setState({
+                categories: cat
+            })
+        } else {
+            localStorage.setItem('category', JSON.stringify(this.state.categories))
+        }
     }
 
     createCategory = () => {
@@ -218,9 +223,11 @@ class EditIdea extends Component {
                                                     <select className="form-control movie-input" value={category || ''} onChange={this.changeCategoryHandler} >
                                                         <option value={category || ''} hidden>{category}</option>
                                                         {
-                                                            categories.map((categrory, index) => {
-                                                                return <option value={categrory} key={index}>{categrory}</option>
-                                                            })
+                                                            (categories !== null && categories !== [] && categories !== undefined) ? (
+                                                                categories.map((categrory, index) => {
+                                                                    return <option value={categrory} key={index}>{categrory}</option>
+                                                                })
+                                                            ) : []
                                                         }
                                                     </select>
                                                     <button type="button" className="new-card-add-category-btn" onClick={this.openCategoryModal}>

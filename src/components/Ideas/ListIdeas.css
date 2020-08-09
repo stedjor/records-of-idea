@@ -209,8 +209,17 @@
     color    : rgb(255, 215, 0);
 }
 
+.not-picked-idea>.list-dark-bulb {
+    font-size: 100px ;
+    color    : rgb(51, 51, 51);
+}
+
 .not-picked-idea>h3 {
     color: white;
+}
+
+.not-picked-idea>h3.list-no-ideas {
+    color: rgb(51, 51, 51);
 }
 
 .not-picked-idea>h3>.list-carret-arrow {

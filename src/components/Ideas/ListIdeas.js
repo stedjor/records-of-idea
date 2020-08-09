@@ -185,8 +185,12 @@ class ListIdeas extends Component {
                     ) : (
                             <div className="col-md-8">
                                 <div className="not-picked-idea">
-                                    <FontAwesomeIcon icon={faLightbulb} className="list-light-bulb" />
-                                    <h3> <FontAwesomeIcon icon={(window.innerWidth < 425) ? faArrowUp : faArrowLeft} className="list-carret-arrow" /> Pick the idea to see details</h3>
+                                    <FontAwesomeIcon icon={faLightbulb} className={allIdeas.length !== 0 ? "list-light-bulb" : "list-dark-bulb"} />
+                                    {
+                                        allIdeas.length !== 0 ? (
+                                            <h3 > <FontAwesomeIcon icon={(window.innerWidth < 425) ? faArrowUp : faArrowLeft} className="list-carret-arrow" /> Pick the idea to see details</h3>
+                                        ) : <h3 className="list-no-ideas">No ideas</h3>
+                                    }
                                 </div>
                             </div>
                         )

@@ -73,12 +73,12 @@ class NewIdea extends Component {
 
     //======= Manipulating category =======//
     getCategory = () => {
-        if(localStorage.getItem('category') !== null) {
+        if (localStorage.getItem('category') !== null) {
             let cat = JSON.parse(localStorage.getItem('category'))
             this.setState({
                 categories: cat
             })
-        }else {
+        } else {
             localStorage.setItem('category', JSON.stringify(this.state.categories))
         }
     }
@@ -247,6 +247,7 @@ class NewIdea extends Component {
                                             <div className="form-group new-card-form-group">
                                                 <label htmlFor="inputRating">Rating</label>
                                                 <select className="form-control " value={rating} onChange={this.changeRatingHandler} >
+                                                    <option value="0" hidden>*</option>
                                                     {
                                                         ratings.map((rating, index) => {
                                                             return <option value={rating} key={index}>{rating}</option>
