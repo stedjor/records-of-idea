@@ -284,7 +284,7 @@ class EditIdea extends Component {
                                     <div className="col input-group">
                                         <input type="text" className="form-control add-new-category-input" id="inputCategory" placeholder="Add new Category"
                                             value={categoryInModal} onChange={this.changeCategoryModalHandler} />
-                                        <div className="input-group-append">
+                                        <div class="input-group-append">
                                             <button className="btn btn-outline-secondary add-new-category-btn" onClick={this.createCategory}>add</button>
                                         </div>
                                     </div>

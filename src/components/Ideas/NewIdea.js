@@ -73,10 +73,14 @@ class NewIdea extends Component {
 
     //======= Manipulating category =======//
     getCategory = () => {
-        let cat = JSON.parse(localStorage.getItem('category'))
-        this.setState({
-            categories: cat
-        })
+        if(localStorage.getItem('category') !== null) {
+            let cat = JSON.parse(localStorage.getItem('category'))
+            this.setState({
+                categories: cat
+            })
+        }else {
+            localStorage.setItem('category', this.state.categories)
+        }
     }
 
     createCategory = () => {
@@ -226,11 +230,11 @@ class NewIdea extends Component {
                                                     <select className="form-control" value={category} onChange={this.changeCategoryHandler} >
                                                         <option value="type" hidden>Choose</option>
                                                         {
-                                                            categories !== null ? (
+                                                            (categories !== null && categories !== [] && categories !== undefined) ? (
                                                                 categories.map((categrory, index) => {
                                                                     return <option value={categrory} key={index}>{categrory}</option>
                                                                 })
-                                                            ) : null
+                                                            ) : []
                                                         }
                                                     </select>
                                                     <button type="button" className="new-card-add-category-btn" onClick={this.openCategoryModal}>
@@ -294,7 +298,7 @@ class NewIdea extends Component {
                                     <div className="col input-group">
                                         <input type="text" className="form-control add-new-category-input" id="inputCategory" placeholder="Add new Category"
                                             value={categoryInModal} onChange={this.changeCategoryModalHandler} />
-                                        <div className="input-group-append">
+                                        <div class="input-group-append">
                                             <button className="btn btn-outline-secondary add-new-category-btn" onClick={this.createCategory}>add</button>
                                         </div>
                                     </div>
@@ -304,18 +308,20 @@ class NewIdea extends Component {
                                         <h6 className="new-idea-subtitle-modal">List of categories</h6>
                                         <ul className="list-group new-idea-category-modal scrollbar scrollbar-primary">
                                             {
-                                                categories.map((item, index) => {
-                                                    return (
-                                                        <li className="list-group-item d-flex justify-content-between" key={index}>
-                                                            <div>
-                                                                {item}
-                                                            </div>
-                                                            <button className="btn btn-link new-idea-delete-category" onClick={() => this.deleteCategory(index)}>
-                                                                <FontAwesomeIcon icon={faTrashAlt} />
-                                                            </button>
-                                                        </li>
-                                                    )
-                                                })
+                                                (categories !== null && categories !== [] && categories !== undefined) ? (
+                                                    categories.map((item, index) => {
+                                                        return (
+                                                            <li className="list-group-item d-flex justify-content-between" key={index}>
+                                                                <div>
+                                                                    {item}
+                                                                </div>
+                                                                <button className="btn btn-link new-idea-delete-category" onClick={() => this.deleteCategory(index)}>
+                                                                    <FontAwesomeIcon icon={faTrashAlt} />
+                                                                </button>
+                                                            </li>
+                                                        )
+                                                    })
+                                                ) : []
                                             }
                                         </ul>
                                     </div>
