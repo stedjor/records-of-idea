@@ -79,7 +79,7 @@ class NewIdea extends Component {
                 categories: cat
             })
         }else {
-            localStorage.setItem('category', this.state.categories)
+            localStorage.setItem('category', JSON.stringify(this.state.categories))
         }
     }
 
