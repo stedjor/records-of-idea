@@ -81,7 +81,6 @@ class ListIdeas extends Component {
                         idea: null
                     })
                     this.props.history.push(`list-ideas`);
-                    console.log("idea is deleted!", this.state.allIdeas)
                 })
                 .catch(error => {
                     console.log(error)

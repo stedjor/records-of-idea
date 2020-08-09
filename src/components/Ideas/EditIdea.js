@@ -98,7 +98,6 @@ class EditIdea extends Component {
             })
             .then(() => {
                 this.props.history.push('list-ideas')
-                console.log("idea is updated!")
             })
             .catch(error => {
                 console.log(error)
@@ -285,7 +284,7 @@ class EditIdea extends Component {
                                     <div className="col input-group">
                                         <input type="text" className="form-control add-new-category-input" id="inputCategory" placeholder="Add new Category"
                                             value={categoryInModal} onChange={this.changeCategoryModalHandler} />
-                                        <div class="input-group-append">
+                                        <div className="input-group-append">
                                             <button className="btn btn-outline-secondary add-new-category-btn" onClick={this.createCategory}>add</button>
                                         </div>
                                     </div>
@@ -316,7 +315,6 @@ class EditIdea extends Component {
 
                             </div>
                             <div className="modal-footer edit-idea-modal-footer">
-                                {console.log(isDeletedCategory)}
                                 <button type="button" className="btn new-card-btn" data-dismiss="modal" aria-label="Close" onClick={this.saveCategory}
                                     disabled={!isDeletedCategory}>
                                     <span aria-hidden="true">Save</span>

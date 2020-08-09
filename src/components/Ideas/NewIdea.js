@@ -56,12 +56,10 @@ class NewIdea extends Component {
                 let max = 0;
                 data.forEach((doc) => {
                     ideas.push({ id: doc.id, ...doc.data() })
-                    console.log(ideas)
                 })
                 if (ideas.length !== 0) {
                     ideas.map(item => ideaOrdinals.push(item.ordinal))
                     max = Math.max(...ideaOrdinals)
-                    console.log(ideaOrdinals)
                     this.setState({ ordinal: max + 1 })
                 } else {
                     max = 0
@@ -228,9 +226,11 @@ class NewIdea extends Component {
                                                     <select className="form-control" value={category} onChange={this.changeCategoryHandler} >
                                                         <option value="type" hidden>Choose</option>
                                                         {
-                                                            categories.map((categrory, index) => {
-                                                                return <option value={categrory} key={index}>{categrory}</option>
-                                                            })
+                                                            categories !== null ? (
+                                                                categories.map((categrory, index) => {
+                                                                    return <option value={categrory} key={index}>{categrory}</option>
+                                                                })
+                                                            ) : null
                                                         }
                                                     </select>
                                                     <button type="button" className="new-card-add-category-btn" onClick={this.openCategoryModal}>
@@ -294,7 +294,7 @@ class NewIdea extends Component {
                                     <div className="col input-group">
                                         <input type="text" className="form-control add-new-category-input" id="inputCategory" placeholder="Add new Category"
                                             value={categoryInModal} onChange={this.changeCategoryModalHandler} />
-                                        <div class="input-group-append">
+                                        <div className="input-group-append">
                                             <button className="btn btn-outline-secondary add-new-category-btn" onClick={this.createCategory}>add</button>
                                         </div>
                                     </div>
