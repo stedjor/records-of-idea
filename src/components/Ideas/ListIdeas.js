@@ -152,7 +152,7 @@ class ListIdeas extends Component {
                                     <div>
                                         <h4><span>{idea.ordinal}.</span> {idea.shortName} </h4> <small>{idea.date}</small>
                                     </div>
-                                    <div>
+                                    <div className="d-flex">
                                         <button type="button" className="btn btn-link card-link-btn"
                                             onClick={this.editIdea}>
                                             <FontAwesomeIcon icon={faEdit} />
