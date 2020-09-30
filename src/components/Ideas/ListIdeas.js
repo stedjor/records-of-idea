@@ -107,7 +107,7 @@ class ListIdeas extends Component {
         const { allIdeas, idea, ideaId, sortOrdinal } = this.state
         return (
             <div className="row">
-                <div className="col-md-4">
+                <div className="col-lg-4 col-md-5">
                     <div className="text-center">
                         <button className="btn list-btn-sort" onClick={this.sortByOrdinal}>
                             Sort by ordinal <FontAwesomeIcon icon={sortOrdinal ? faLongArrowAltDown : faLongArrowAltUp} />
@@ -116,7 +116,7 @@ class ListIdeas extends Component {
 
                     {
                         allIdeas.length !== 0 ? (
-                            <div className="list-card-content scrollbar scrollbar-primary">
+                            <div className="list-card-content scrollbar scrollbar-primary mb-2">
                                 {
                                     allIdeas.map((item, index) => {
                                         return (
@@ -146,7 +146,7 @@ class ListIdeas extends Component {
                 </div>
                 {
                     idea !== null ? (
-                        <div className="col-md-8">
+                        <div className="col-lg-8 col-md-7">
                             <div className="card idea-card">
                                 <div className="card-header idea-card-header d-flex justify-content-between">
                                     <div>
@@ -183,12 +183,12 @@ class ListIdeas extends Component {
                             </div>
                         </div>
                     ) : (
-                            <div className="col-md-8">
+                            <div className="col-lg-8 col-md-7">
                                 <div className="not-picked-idea">
                                     <FontAwesomeIcon icon={faLightbulb} className={allIdeas.length !== 0 ? "list-light-bulb" : "list-dark-bulb"} />
                                     {
                                         allIdeas.length !== 0 ? (
-                                            <h3 > <FontAwesomeIcon icon={(window.innerWidth < 425) ? faArrowUp : faArrowLeft} className="list-carret-arrow" /> Pick the idea to see details</h3>
+                                            <h3 > <FontAwesomeIcon icon={(window.innerWidth <= 425) ? faArrowUp : faArrowLeft} className="list-carret-arrow" /> Pick the idea to see details</h3>
                                         ) : <h3 className="list-no-ideas">No ideas</h3>
                                     }
                                 </div>

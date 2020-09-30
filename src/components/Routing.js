@@ -4,6 +4,8 @@ import Header from './Header/Header';
 import NewIdea from './Ideas/NewIdea';
 import ListIdeas from './Ideas/ListIdeas';
 import EditIdea from './Ideas/EditIdea';
+import Footer from './Footer/Footer';
+import './Routing.css'
 
 
 class Routing extends Component {
@@ -11,7 +13,7 @@ class Routing extends Component {
         return (
             <Router>
                 <Header />
-                <div className="container">
+                <section className="container main-content">
                     <Switch>
                         <Route exact path="/" component={ListIdeas} >
                             <Redirect to="/list-ideas" />
@@ -20,7 +22,8 @@ class Routing extends Component {
                         <Route path="/new-idea" component={NewIdea} />
                         <Route path="/edit-idea" component={EditIdea} />
                     </Switch>
-                </div>
+                </section>
+                <Footer />
             </Router>
         )
     }

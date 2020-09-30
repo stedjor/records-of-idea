@@ -10,13 +10,13 @@
 .new-idea-card>.new-idea-card-header {
     padding                : 10px 15px;
     background-color       : rgb(51, 51, 51) !important;
-    border-bottom          : 2px solid rgb(255, 215, 0);
+    border-bottom          : 2px solid rgb(0, 220, 251);
     border-top-left-radius : 10px;
     border-top-right-radius: 10px;
 }
 
 .new-idea-card>.new-idea-card-header>div>h4 {
-    color        : rgb(255, 215, 0);
+    color        : rgb(0, 220, 251);
     margin-bottom: 0;
 }
 
@@ -29,7 +29,7 @@
 }
 
 .new-card-link-btn:hover {
-    color: rgb(255, 215, 0);
+    color: rgb(0, 220, 251);
 }
 
 .new-card-link-btn:focus {
@@ -44,7 +44,7 @@
 }
 
 .new-card-form-group>label {
-    color: rgb(255, 215, 0);
+    color: rgb(0, 220, 251);
 }
 
 .new-card-form-group>input,
@@ -58,8 +58,8 @@
 .new-card-form-group>textarea:focus,
 .new-card-form-group>select:focus,
 .new-card-form-group>div>select:focus {
-    border    : 1px solid rgb(255, 215, 0);
-    box-shadow: 0 0 0 0.2rem rgba(255, 215, 0, 0.25);
+    border    : 1px solid rgb(0, 220, 251);
+    box-shadow: 0 0 0 0.2rem rgba(0, 220, 251, 0.25);
 }
 
 .new-card-add-category-btn {
@@ -69,7 +69,7 @@
     white-space: nowrap;
     background : none;
     margin-left: 3px;
-    color      : gold;
+    color      : rgb(0, 220, 251);
 }
 
 .new-card-add-category-btn:hover {
@@ -81,17 +81,17 @@
 }
 
 .new-card-btn {
-    border-color: rgb(255, 215, 0);
-    background  : rgb(255, 215, 0);
+    border-color: rgb(0, 220, 251);
+    background  : rgb(0, 220, 251);
     color       : rgb(51, 51, 51);
 }
 
 .new-card-btn:hover {
-    background: rgb(185, 165, 0);
+    background: rgb(0, 179, 202);
 }
 
 .new-card-btn:focus {
-    box-shadow: 0 0 0 0.2rem rgba(255, 215, 0, 0.25);
+    box-shadow: 0 0 0 0.2rem rgba(0, 220, 251, 0.25);
 }
 
 /* New idea modal */
@@ -101,11 +101,11 @@
 
 .new-idea-modal-header {
     background-color: rgb(51, 51, 51) !important;
-    border-bottom   : 2px solid rgb(255, 215, 0);
+    border-bottom   : 2px solidrgb(0, 220, 251);
 }
 
 .new-idea-modal-header>div>h5 {
-    color: rgb(255, 215, 0);
+    color: rgb(0, 220, 251);
 }
 
 .new-idea-modal-header>button {
@@ -113,7 +113,7 @@
 }
 
 .new-idea-modal-header>button:hover {
-    color: rgb(255, 215, 0);
+    color: rgb(0, 220, 251);
 }
 
 .new-idea-modal-body {
@@ -124,26 +124,26 @@
 }
 
 .add-new-category-btn {
-    border-color: rgb(255, 215, 0);
-    background  : rgb(255, 215, 0);
+    border-color: rgb(0, 220, 251);
+    background  : rgb(0, 220, 251);
     color       : rgb(51, 51, 51);
 }
 
 .add-new-category-btn:hover {
-    background: rgb(185, 165, 0);
+    background: rgb(0, 220, 251);
     color     : rgb(51, 51, 51);
 }
 
 .add-new-category-btn:focus {
-    box-shadow: 0 0 0 0.2rem rgba(255, 215, 0, 0.25);
+    box-shadow: 0 0 0 0.2rem rgba(0, 220, 251, 0.25);
 }
 
 .add-new-category-input:focus {
-    box-shadow: 0 0 0 0.2rem rgba(255, 215, 0, 0.25);
+    box-shadow: 0 0 0 0.2rem rgba(0, 220, 251, 0.25);
 }
 
 .new-idea-subtitle-modal {
-    color: rgb(255, 215, 0);
+    color: rgb(0, 220, 251);
 }
 
 .new-idea-category-modal>li {
@@ -170,7 +170,7 @@
 
 .new-idea-modal-footer{
     background-color: rgb(51, 51, 51) !important;
-    border-top   : 2px solid rgb(255, 215, 0);
+    border-top   : 2px solid rgb(0, 220, 251);
 }
 
 /* Modal scrollbar */
@@ -185,7 +185,7 @@
 }
 
 .new-idea-category-modal.scrollbar.scrollbar-primary::-webkit-scrollbar-track {
-    --webkit-box-shadow: inset 0 0 6px rgba(255, 215, 0, 0.1);
+    --webkit-box-shadow: inset 0 0 6px rgba(0, 220, 251, 0.1);
     background-color   : rgba(244, 244, 244, 0.1);
     border-radius      : 10px;
 }
@@ -199,10 +199,10 @@
 
 .new-idea-category-modal.scrollbar.scrollbar-primary::-webkit-scrollbar-thumb {
     border-radius      : 10px;
-    --webkit-box-shadow: inset 0 0 6px rgba(255, 215, 0, 0.1);
-    background-image   : -webkit-gradient(linear, left top, right top, from(rgba(255, 215, 0, 1)), to(rgba(51, 51, 51, 1)nd));
-    background-image   : -webkit-linear-gradient(left, rgba(255, 215, 0, 1) 0%, rgba(51, 51, 51, 1)nd 100%);
-    background-image   : linear-gradient(to right, rgba(255, 215, 0, 1) 0%, rgba(51, 51, 51, 1) 100%);
+    --webkit-box-shadow: inset 0 0 6px rgba(0, 220, 251, 0.1);
+    background-image   : -webkit-gradient(linear, left top, right top, from(rgba(0, 220, 251, 1)), to(rgba(51, 51, 51, 1)nd));
+    background-image   : -webkit-linear-gradient(left, rgba(0, 220, 2510, 220, 251, 1) 0%, rgba(51, 51, 51, 1)nd 100%);
+    background-image   : linear-gradient(to right, rgba(0, 220, 251, 1) 0%, rgba(51, 51, 51, 1) 100%);
 }
 
 .modal-backdrop {

@@ -253,14 +253,14 @@ class EditIdea extends Component {
                                         <div className="col-md-12">
                                             <div className="form-group edit-card-form-group">
                                                 <label htmlFor="inputDetailedDesc">Detailed description</label>
-                                                <textarea className="form-control" rows="3" id="inputDetailedDesc" placeholder="Enter detailed description "
+                                                <textarea className="form-control" rows="2" id="inputDetailedDesc" placeholder="Enter detailed description "
                                                     value={detailedDesc || ''} onChange={this.changeDetailedDescHandler}></textarea>
                                             </div>
                                         </div>
                                         <div className="col-md-12">
                                             <div className="form-group edit-card-form-group">
                                                 <label htmlFor="inputExpectation">Expectation</label>
-                                                <textarea className="form-control" rows="3" id="inputExpectation" placeholder="Enter expectation"
+                                                <textarea className="form-control" rows="2" id="inputExpectation" placeholder="Enter expectation"
                                                     value={expectation || ''} onChange={this.changeExpectationHandler} ></textarea>
                                             </div>
                                         </div>
@@ -291,7 +291,7 @@ class EditIdea extends Component {
                                     <div className="col input-group">
                                         <input type="text" className="form-control add-new-category-input" id="inputCategory" placeholder="Add new Category"
                                             value={categoryInModal} onChange={this.changeCategoryModalHandler} />
-                                        <div class="input-group-append">
+                                        <div className="input-group-append">
                                             <button className="btn btn-outline-secondary add-new-category-btn" onClick={this.createCategory}>add</button>
                                         </div>
                                     </div>

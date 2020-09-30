@@ -1,0 +1,134 @@
+.idea-footer {
+    color   : rgb(0, 220, 251);
+    position: relative;
+    bottom  : 0;
+    width   : 100%;
+}
+
+.idea-footer>.footer-signature {
+    color         : rgb(0, 220, 251);
+    text-shadow   : 0px 0px 25px rgb(51, 51, 51);
+    margin        : 0;
+    font-family   : 'Great Vibes';
+    font-size     : 25px !important;
+    font-style    : italic;
+    letter-spacing: 3px;
+    cursor        : pointer;
+}
+
+.idea-footer>.footer-signature:focus {
+    color  : rgb(0, 220, 251);
+    outline: none;
+}
+
+.idea-footer>.footer-signature:hover {
+    color      : rgb(0, 220, 251);
+    text-shadow: 0px 0px 25px rgb(0, 220, 251);
+}
+
+.idea-footer>div>.footer-link {
+    color          : rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.idea-footer>div>.footer-link.active {
+    color      : rgb(0, 220, 251);
+    text-shadow: 0px 0px 25px white;
+    margin     : 0;
+}
+
+.idea-footer>div>.footer-link:hover {
+    color          : rgb(255, 255, 255);
+    text-shadow    : 0px 0px 25px rgb(0, 220, 251);
+    text-decoration: none;
+}
+
+.idea-footer-icon {
+    color    : rgb(0, 220, 251) !important;
+    font-size: 25px !important;
+    margin   : 0 30px;
+    cursor   : pointer;
+}
+
+.idea-footer-icon:hover {
+    color: white !important;
+}
+
+/* New idea modal */
+.idea-footer-modal-dialog {
+    z-index: 1;
+}
+
+.idea-footer-modal-content {
+    background-color: rgb(51, 51, 51) !important;
+}
+
+.idea-footer-modal-header {
+    background-color: rgb(51, 51, 51) !important;
+    border-bottom   : 2px solid rgb(0, 220, 251);
+}
+
+.idea-footer-modal-header>div>h5 {
+    color: white;
+}
+
+.idea-footer-modal-header>div>h5>.lightbul-icon {
+    color: rgb(0, 220, 251);
+}
+
+.idea-footer-modal-header>button {
+    color  : rgb(255, 255, 255);
+    opacity: 1;
+}
+
+.idea-footer-modal-header>button:hover {
+    color: rgb(0, 220, 251);
+}
+
+.idea-footer-modal-body {
+    margin          : 5px;
+    background-color: rgb(90, 90, 90) !important;
+    border-radius   : 5px;
+    position        : relative;
+    padding         : 30px;
+    color           : white;
+}
+
+.idea-footer-modal-body>h4 {
+    color: rgb(0, 220, 251);
+}
+
+.idea-footer-modal-body>.idea-footer-modal-text-indent {
+    text-indent: 20px;
+}
+
+.idea-footer-modal-backdrop {
+    position        : absolute;
+    top             : 0;
+    opacity         : 0.8;
+    width           : 100%;
+    height          : 100%;
+    border-radius   : 5px;
+    z-index         : 0;
+    background-color: #000;
+}
+
+
+@media screen and (max-width: 425px){
+    .idea-footer-modal-body>h4 {
+        font-size: 20px;
+    }
+    .idea-footer-modal-body>h5 {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .idea-footer-modal-body>h4 {
+        font-size: 18px;
+    }
+
+    .idea-footer-modal-body>h5 {
+        font-size: 13px;
+    }
+}

@@ -5,18 +5,15 @@ import './Header.css'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faLightbulb } from '@fortawesome/free-regular-svg-icons'
 
 export class Header extends Component {
-
-    componentDidMount() {
-
-    }
 
     render() {
         return (
             <nav className="navbar navbar-light justify-content-between idea-header mb-2">
-                <a className="navbar-brand header-signature" href="/">
-                    Stefan Đorđević
+                <a className="navbar-brand header-brand" href="/">
+                    Record <FontAwesomeIcon className="brand-icon" icon={faLightbulb} />f Ideas
                 </a>
 
                 <div className="d-flex mb-2 justify-content-between" >
